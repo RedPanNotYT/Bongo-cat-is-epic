@@ -342,23 +342,8 @@ class PlayState extends MusicBeatState
 		//dialogue shit
 		switch (songLowercase)
 		{
-			case 'tutorial':
-				dialogue = ["Hey you're pretty cute.", 'Use the arrow keys to keep up \nwith me singing.'];
-			case 'bopeebo':
-				dialogue = [
-					'HEY!',
-					"You think you can just sing\nwith my daughter like that?",
-					"If you want to date her...",
-					"You're going to have to go \nthrough ME first!"
-				];
-			case 'fresh':
-				dialogue = ["Not too shabby boy.", ""];
-			case 'dadbattle':
-				dialogue = [
-					"gah you think you're hot stuff?",
-					"If you can beat me here...",
-					"Only then I will even CONSIDER letting you\ndate my daughter!"
-				];
+			case 'bongeao':
+				dialogue = CoolUtil.coolTextFile(Paths.txt('bongeao/dialog'));
 			case 'senpai':
 				dialogue = CoolUtil.coolTextFile(Paths.txt('senpai/senpaiDialogue'));
 			case 'roses':
@@ -709,20 +694,20 @@ class PlayState extends MusicBeatState
 								add(waveSpriteFG);
 						*/
 			}
-			case 'bongo':
+case 'bongo':
                 {
                         defaultCamZoom = 0.6;
                         curStage = 'bongo';
-                        var bg:FlxSprite = new FlxSprite(-600, -500).loadGraphic(Paths.image('bongo/background/bongoBG'));
-                        bg.setGraphicSize(Std.int(bg.width * 1.2));
+                        var bg:FlxSprite = new FlxSprite(-100, -300).loadGraphic(Paths.image('bongo/background/bongoBG'));
+                        bg.setGraphicSize(Std.int(bg.width * 2));
                         bg.updateHitbox();
                         bg.antialiasing = true;
                         bg.scrollFactor.set(0.9, 0.9);
                         bg.active = false;
                         add(bg);
 
-                        var stageFront:FlxSprite = new FlxSprite(-700, 600).loadGraphic(Paths.image('bongo/background/bongoFLOOR'));
-                        stageFront.setGraphicSize(Std.int(stageFront.width * 1.2));
+                        var stageFront:FlxSprite = new FlxSprite(-300, 250).loadGraphic(Paths.image('bongo/background/bongoFLOOR'));
+                        stageFront.setGraphicSize(Std.int(stageFront.width * 2));
                         stageFront.updateHitbox();
                         stageFront.antialiasing = true;
                         stageFront.scrollFactor.set(0.9, 0.9);
@@ -1132,6 +1117,8 @@ class PlayState extends MusicBeatState
 					FlxG.sound.play(Paths.sound('ANGRY'));
 					schoolIntro(doof);
 				case 'thorns':
+					schoolIntro(doof);
+				case 'bongeao':
 					schoolIntro(doof);
 				default:
 					startCountdown();

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="catPortrait.png">
+	<!-- Created with Adobe Animate version 21.0.4.39603 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Bango cat dialoge0000" x="0" y="0" width="331" height="159" frameX="0" frameY="-3" frameWidth="331" frameHeight="162"/>
+	<SubTexture name="Bango cat dialoge0001" x="0" y="0" width="331" height="159" frameX="0" frameY="-3" frameWidth="331" frameHeight="162"/>
+	<SubTexture name="Bango cat dialoge0002" x="0" y="159" width="323" height="161" frameX="-3" frameY="-1" frameWidth="331" frameHeight="162"/>
+	<SubTexture name="Bango cat dialoge0003" x="0" y="159" width="323" height="161" frameX="-3" frameY="-1" frameWidth="331" frameHeight="162"/>
+	<SubTexture name="Bango cat dialoge0004" x="0" y="320" width="318" height="162" frameX="-6" frameY="0" frameWidth="331" frameHeight="162"/>
+</TextureAtlas>
