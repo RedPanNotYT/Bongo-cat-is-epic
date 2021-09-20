@@ -698,16 +698,16 @@ case 'bongo':
                 {
                         defaultCamZoom = 0.6;
                         curStage = 'bongo';
-                        var bg:FlxSprite = new FlxSprite(-100, -300).loadGraphic(Paths.image('bongo/background/bongoBG'));
-                        bg.setGraphicSize(Std.int(bg.width * 2));
+                        var bg:FlxSprite = new FlxSprite(-600, -500).loadGraphic(Paths.image('bongo/background/bongoBG'));
+                        bg.setGraphicSize(Std.int(bg.width * 1.2));
                         bg.updateHitbox();
                         bg.antialiasing = true;
                         bg.scrollFactor.set(0.9, 0.9);
                         bg.active = false;
                         add(bg);
 
-                        var stageFront:FlxSprite = new FlxSprite(-300, 250).loadGraphic(Paths.image('bongo/background/bongoFLOOR'));
-                        stageFront.setGraphicSize(Std.int(stageFront.width * 2));
+                        var stageFront:FlxSprite = new FlxSprite(-700, 600).loadGraphic(Paths.image('bongo/background/bongoFLOOR'));
+                        stageFront.setGraphicSize(Std.int(stageFront.width * 1.2));
                         stageFront.updateHitbox();
                         stageFront.antialiasing = true;
                         stageFront.scrollFactor.set(0.9, 0.9);
